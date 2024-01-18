@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Hitung Luas dan Keliling Persegi</title>
+</head>
+
+<body>
+    
+    <section class="calculator-container">
+        <header>
+            <h1>Hitung Luas dan Keliling Persegi</h1>
+        </header>
+        <span>
+            <div class="shape-image">
+                <img src="img/persegi.png" alt="Persegi" width="150" >
+                <p>Bangun Datar Persegi</p>
+            </div>
+            
+            <section class="instruction">
+                <p>Rumus :</p>
+                <p>Luas = S x S</p>
+                <p>Keliling = 4 x S</p>
+            </section>
+            
+            <form id="calculator-form">
+                <div class="form-group">
+                    <label for="side">Sisi:</label>
+                    <input type="number" placeholder="Masukkan Nilai Sisi..." id="side" required>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="calculate()">Hitung</button>
+                    <button class="reset-button" type="button" onclick="resetForm()">Reset</button>
+                </div>
+                
+            </form>
+            
+            <div class="result" id="result-container" style="display: none;">
+                <h2>Hasil:</h2>
+                <p>Luas = <span id="square-area-formula">-</span></p>
+                <p>Keliling = <span id="rectangle-area-formula">-</span></p>
+            </div>
+        </span>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
